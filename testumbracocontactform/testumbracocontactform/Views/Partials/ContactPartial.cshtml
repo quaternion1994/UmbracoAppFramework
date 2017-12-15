@@ -1,0 +1,61 @@
+﻿@inherits UmbracoViewPage<ContactFormViewModel>
+
+@using (Html.BeginUmbracoForm("SubmitForm", "ContactSurface", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        @Html.ValidationSummary()
+    </div>
+
+    <div class="form-group">
+        <div class="col-xs-3">
+            @Html.LabelFor(m => m.Subject)
+        </div>
+        <div class="col-xs-9">
+            @Html.DropDownListFor(m => m.Subject, Model.Subjects.Select(x => new SelectListItem() { Text = x, Value = x }))
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <div class="col-xs-3">
+            @Html.LabelFor(m => m.Email)
+        </div>
+        <div class="col-xs-9">
+            @Html.DropDownListFor(m => m.Email, Model.Recepients.Select(x=> new SelectListItem() { Text = x, Value = x }) )
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="form-group">
+        <div class="col-xs-3">
+            @Html.LabelFor(m => m.Name)
+        </div>
+        <div class="col-xs-9">
+            @Html.TextBoxFor(m => m.Name)
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-xs-3">
+            @Html.LabelFor(m => m.Phone)
+        </div>
+        <div class="col-xs-9">
+            @Html.TextBoxFor(m => m.Phone)
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-xs-3">
+            @Html.LabelFor(m => m.Message)
+        </div>
+        <div class="col-xs-9">
+            @Html.TextAreaFor(m => m.Message)
+        </div>
+    </div>
+
+    
+    
+    <button>Send</button>
+}

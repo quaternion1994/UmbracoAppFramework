@@ -18030,4 +18030,20 @@
         }
         angular.module('umbraco').controller('Umbraco.Editors.Users.UsersController', UsersController);
     }());
+
+    (function () {
+        'use strict';
+        function ContactMessagesController($scope, $timeout, $http) {
+            var vm = this;
+            vm.messageList = [];
+
+            $http.get('/umbraco/backoffice/api/MessagesApi/GetList')
+                .then(
+                function (responce) {
+                    vm.messageList = responce.data;
+                    console.log(responce.data);
+                });
+        }
+        angular.module('umbraco').controller('Umbraco.Dashboard.ContactMessagesController', ["$scope", "$timeout", "$http", ContactMessagesController]);
+    }());
 }());

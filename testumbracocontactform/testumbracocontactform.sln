@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testumbracocontactform", "testumbracocontactform\testumbracocontactform.csproj", "{1107630A-74F2-43AB-9F46-B1C80E12603A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testumbracocontactform.DataAccess", "testumbracocontactform.DataAccess\testumbracocontactform.DataAccess.csproj", "{ECFD5CD8-3957-4720-9AB9-F3DC0B82A5E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testumbracocontactform.Bussiness", "testumbracocontactform.Bussiness\testumbracocontactform.Bussiness.csproj", "{05D2CE56-0ABC-4B7A-832C-F87FECA87857}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{1107630A-74F2-43AB-9F46-B1C80E12603A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1107630A-74F2-43AB-9F46-B1C80E12603A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1107630A-74F2-43AB-9F46-B1C80E12603A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECFD5CD8-3957-4720-9AB9-F3DC0B82A5E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECFD5CD8-3957-4720-9AB9-F3DC0B82A5E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECFD5CD8-3957-4720-9AB9-F3DC0B82A5E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECFD5CD8-3957-4720-9AB9-F3DC0B82A5E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05D2CE56-0ABC-4B7A-832C-F87FECA87857}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05D2CE56-0ABC-4B7A-832C-F87FECA87857}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05D2CE56-0ABC-4B7A-832C-F87FECA87857}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05D2CE56-0ABC-4B7A-832C-F87FECA87857}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

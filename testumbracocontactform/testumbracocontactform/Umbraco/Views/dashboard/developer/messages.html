@@ -1,0 +1,27 @@
+<div ng-show="true" class="messages-dashboard" ng-controller="Umbraco.Dashboard.ContactMessagesController as vm">
+    <!-- Sections -->
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <td></td>
+                <td class="bold">Name</td>
+                <td>Phone</td>
+                <td>E-mail</td>
+				<td>Subject</td>			
+                <td>Message</td>
+                <td>Status</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in vm.messageList">
+                <td></td>
+                <td class="bold">{{item.Name}}</td>
+                <td>{{item.Phone}}</td>
+                <td>{{item.Email}}</td>
+				<td>{{item.Subject}}</td>		
+                <td>{{item.Message}}</td>
+                <td>{{item.MessageStatus == 250 ? 'Sent' : 'Not sent'}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
