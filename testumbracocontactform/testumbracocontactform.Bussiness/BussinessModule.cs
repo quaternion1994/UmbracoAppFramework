@@ -11,6 +11,7 @@ namespace testumbracocontactform.Bussiness
         {
             builder.RegisterType<SendMessageProvider>().As<ISendMessageProvider>().InstancePerRequest();
             builder.RegisterType<ContactFormService>().As<IContactFormService>().InstancePerRequest();
+            builder.RegisterType<CaptchaService>().As<ICaptchaService>().InstancePerRequest();
         }
     }
 }
